@@ -1,0 +1,6 @@
+body {
+    width: 400px !important;
+    height: 100%;
+    min-height: 500px;
+    max-height: 650px;
+}

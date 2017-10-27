@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ng-Chrome Extension</title>
+
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="css/ionicons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/homeCtrl.js"></script>
+</head>
+
+<body ng-app="chromeApp">
+    <md-toolbar style="height: 50px;">
+        <div class="md-toolbar-tools" ng-hide="showSearch">
+            <h2 flex md-truncate="">Ng-Chrome Extension</h2>
+            <md-button class="md-icon-button" aria-label="Search" ng-click="">
+                <md-icon md-svg-src="/fonts/icons/ic_search_white_24px.svg"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Add..." ng-click="">
+                <md-tooltip md-direction="bottom">New Task</md-tooltip>
+                <md-icon md-svg-src="/fonts/icons/ic_create_white_18px.svg"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <div>
+        <div ui-view></div>
+    </div>
+</body>
+
+</html>

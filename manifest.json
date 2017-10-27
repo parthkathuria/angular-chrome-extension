@@ -1,0 +1,20 @@
+{
+    "author": "Parth Kathuria",
+    "browser_action": {
+        "default_icon": {
+            "40": "img/icon.png"
+        },
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "24": "img/icon.png",
+        "36": "img/icon.png",
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+    },
+    "manifest_version": 2,
+    "name": "Angular Chrome Extension",
+    "permissions": [
+    ],
+    "version": "0.1"
+}
